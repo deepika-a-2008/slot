@@ -26,92 +26,108 @@ Execute the program using runserver command.
 ## PROGRAM
 ```
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>Weekly Timetable</title>
+  <meta charset="utf-8">
+  <title>Slot Timetable</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #fdfdfd;
       padding: 20px;
     }
-    h2 {
-      text-align: center;
-      color: #333;
-    }
     table {
-      width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
+      width: 100%;
+      text-align: center;
     }
     th, td {
-      border: 1px solid #ccc;
-      text-align: center;
+      border: 1px solid #333;
       padding: 10px;
     }
     th {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .slot {
       background-color: #f2f2f2;
     }
-    td:nth-child(2) { background-color: #ffd6d6; } /* Monday */
-    td:nth-child(3) { background-color: #d6f0ff; } /* Tuesday */
-    td:nth-child(4) { background-color: #e6ffd6; } /* Wednesday */
-    td:nth-child(5) { background-color: #fff0d6; } /* Thursday */
-    td:nth-child(6) { background-color: #f0d6ff; } /* Friday */
   </style>
 </head>
 <body>
-  <h2>Weekly Timetable</h2>
+  <h2>Slot Timetable</h2>
   <table>
     <tr>
-      <th>TIME</th>
-      <th>MONDAY</th>
-      <th>TUESDAY</th>
-      <th>WEDNESDAY</th>
-      <th>THURSDAY</th>
-      <th>FRIDAY</th>
+      <th>Day / Time</th>
+      <th>Slot 1<br>9:00–10:00</th>
+      <th>Slot 2<br>10:00–11:00</th>
+      <th>Slot 3<br>11:00–12:00</th>
+      <th>Slot 4<br>12:00–1:00</th>
+      <th>Lunch</th>
+      <th>Slot 5<br>2:00–3:00</th>
+      <th>Slot 6<br>3:00–4:00</th>
     </tr>
+
     <tr>
-      <td>08:00 - 09:00</td>
-      <td>Math</td>
-      <td>Science</td>
-      <td>English</td>
-      <td>Math</td>
-      <td>History</td>
+      <td><b>Monday</b></td>
+      <td class="slot">Maths</td>
+      <td class="slot">Physics</td>
+      <td class="slot">Chemistry</td>
+      <td class="slot">English</td>
+      <td rowspan="5"><b>Break</b></td>
+      <td class="slot">Lab</td>
+      <td class="slot">Sports</td>
     </tr>
+
     <tr>
-      <td>09:00 - 10:00</td>
-      <td>Science</td>
-      <td>Math</td>
-      <td>Art</td>
-      <td>English</td>
-      <td>PE</td>
+      <td><b>Tuesday</b></td>
+      <td class="slot">Biology</td>
+      <td class="slot">Maths</td>
+      <td class="slot">Computer</td>
+      <td class="slot">Library</td>
+      <td class="slot">English</td>
+      <td class="slot">Physics</td>
     </tr>
+
     <tr>
-      <td>10:00 - 11:00</td>
-      <td>English</td>
-      <td>History</td>
-      <td>Science</td>
-      <td>PE</td>
-      <td>Math</td>
+      <td><b>Wednesday</b></td>
+      <td class="slot">Chemistry</td>
+      <td class="slot">Maths</td>
+      <td class="slot">Lab</td>
+      <td class="slot">Computer</td>
+      <td class="slot">Biology</td>
+      <td class="slot">Library</td>
     </tr>
+
     <tr>
-      <td>11:00 - 12:00</td>
-      <td>Art</td>
-      <td>English</td>
-      <td>Math</td>
-      <td>Science</td>
-      <td>English</td>
+      <td><b>Thursday</b></td>
+      <td class="slot">English</td>
+      <td class="slot">Physics</td>
+      <td class="slot">Sports</td>
+      <td class="slot">Maths</td>
+      <td class="slot">Chemistry</td>
+      <td class="slot">Biology</td>
+    </tr>
+
+    <tr>
+      <td><b>Friday</b></td>
+      <td class="slot">Library</td>
+      <td class="slot">Lab</td>
+      <td class="slot">Computer</td>
+      <td class="slot">Physics</td>
+      <td class="slot">English</td>
+      <td class="slot">Maths</td>
     </tr>
   </table>
 </body>
 </html>
+
+
 ```
 
 
 ## OUTPUT
+<img width="1536" height="1024" alt="Copilot_20251006_142331" src="https://github.com/user-attachments/assets/a623f727-034c-4452-8ece-bbe3d444d1f8" />
 
-<img width="1819" height="592" alt="Screenshot 2025-09-25 162948" src="https://github.com/user-attachments/assets/967d427a-c5a5-4031-b097-8834d75e1630" />
 
 ## RESULT
 The program for creating slot timetable using basic HTML tags is executed successfully.
